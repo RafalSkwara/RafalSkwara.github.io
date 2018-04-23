@@ -43,8 +43,10 @@ body {
   margin: 0 auto;
   background-color: #43A2BF;
   padding: 40px;
-  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -webkit-transition: all .2s ease-in-out, -webkit-transform .1s ease-in;
   transition: all .2s ease-in-out, -webkit-transform .1s ease-in;
   -o-transition: all .2s ease-in-out, transform .1s ease-in;
@@ -53,10 +55,15 @@ body {
   .counter:hover {
     cursor: pointer; }
   .counter:active {
-    -webkit-transform: scale(0.99);
-            transform: scale(0.99);
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
     -webkit-box-shadow: none;
             box-shadow: none; }
+  .counter.unpressed {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.3); }
 
 .counter-wrapper {
   background-color: #43A2BF;
