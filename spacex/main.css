@@ -442,6 +442,42 @@ footer {
     -webkit-transform: translateX(8%);
             transform: translateX(8%); }
 
+.sort-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0f1112; }
+
+button.sort-buttons_button {
+  color: #a7a9ac;
+  background-color: transparent;
+  border: 1px solid #a7a9ac;
+  padding: 7px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  font-weight: 600;
+  -webkit-transition: all .13s ease-in-out;
+  -o-transition: all .13s ease-in-out;
+  transition: all .13s ease-in-out;
+  outline: none;
+  margin-right: 20px; }
+  button.sort-buttons_button:last-of-type {
+    margin-right: 0; }
+  button.sort-buttons_button:hover, button.sort-buttons_button:active {
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: inset 0 0 10px 1px #ffffff;
+            box-shadow: inset 0 0 10px 1px #ffffff; }
+  button.sort-buttons_button:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }
+
 .list .item {
   padding: 10px;
   border: 1px solid #0f1112;
@@ -515,6 +551,10 @@ footer {
 .item .separator {
   width: 20px; }
 
+.launches-wrapper {
+  color: #0f1112;
+  background-color: #ffffff; }
+
 .list {
   width: 100%;
   background-color: #0f1112;
@@ -526,46 +566,6 @@ footer {
       flex-wrap: wrap; }
   .list div {
     width: 50%; }
-
-.sort-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #0f1112; }
-
-button.sort-buttons_button {
-  color: #a7a9ac;
-  background-color: transparent;
-  border: 1px solid #a7a9ac;
-  padding: 7px 30px;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1px;
-  border-radius: 25px;
-  font-weight: 600;
-  -webkit-transition: all .13s ease-in-out;
-  -o-transition: all .13s ease-in-out;
-  transition: all .13s ease-in-out;
-  outline: none;
-  margin-right: 20px; }
-  button.sort-buttons_button:last-of-type {
-    margin-right: 0; }
-  button.sort-buttons_button:hover, button.sort-buttons_button:active {
-    cursor: pointer;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    -webkit-box-shadow: inset 0 0 10px 1px #ffffff;
-            box-shadow: inset 0 0 10px 1px #ffffff; }
-  button.sort-buttons_button:active {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98); }
-
-.launches-wrapper {
-  color: #0f1112;
-  background-color: #ffffff; }
 
 html {
   font-size: 10px; }
