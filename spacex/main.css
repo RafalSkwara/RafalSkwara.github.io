@@ -449,6 +449,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20px;
   background-color: #0f1112; }
 
 button.sort-buttons_button {
@@ -553,7 +554,7 @@ button.sort-buttons_button {
 
 .launches-wrapper {
   color: #0f1112;
-  background-color: #ffffff; }
+  background-color: #0f1112; }
 
 .list {
   width: 100%;
