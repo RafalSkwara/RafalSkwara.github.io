@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1:       rgb(128, 39, 118);
+    --color2:       rgb(220, 7, 30);
+    --color1-semi:  rgb(197, 58, 183);
+    --color2-semi:  rgb(243, 34, 62);
+    --color3:       rgb(249, 220, 85);
+    --color4:       rgb(42, 201, 105);
+}
+
+html, body, button, textarea, input {
+	font-family: 'Muli', Arial, Helvetica, sans-serif;
+}
+html, body {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+	scroll-behavior: smooth;
+	font-size: 16px;
+}
+
+.page-wrapper {
+    max-width: 1920px;
+    min-width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.back-to-top {
+    height: 0px;
+    width: 0px;
+    display: none;
+    background-color: rgba(255,255,255,0.9);
+    color: #111;
+    font-size: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: all 0.1s cubic-bezier(0.58, 2.13, 0.58, 1), transform 0.1s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	opacity: 0;
+	overflow: hidden;
+}
+
+h2, section h2 {
+	margin-top: 60px;
+	padding: 20px 0 20px 20px;
+	font-size: 34px;
+	letter-spacing: 0.1rem;
+}
+
+h3, section h3 {
+	letter-spacing: .1rem;
+}
+
+p {
+	letter-spacing: 0.05rem;
+}
+
+/* - - - Back to top button - - - */
+.back-to-top i {
+	transform: translateY(-3px);
+	opacity: 1;
+}
+
+.back-to-top.visible {
+	height: 50px;
+    width: 50px;
+	opacity: 1;
+	animation: arrow-up .4s cubic-bezier(.18, .89, .32, 1.28) backwards;
+}
+.back-to-top.visible:hover {
+    background: linear-gradient(135deg, var(--color1) 0%, var(--color2) 100%);
+    font-size: 44px;
+	cursor: pointer;
+}
+
+.back-to-top.visible:hover i {
+	animation: arrow-up .5s cubic-bezier(.68, -0.55, .27, 1.55) forwards;
+}
+
+.back-to-top.visible:active i {
+	transform: translateY(-3px);
+} 
+
+.back-to-top.visible:active {
+	transform: scale(0.98);
+}
+
+
+
+@media all and (max-width: 1200px) {
+	section {
+		padding: 40px 20px;
+	}
+}

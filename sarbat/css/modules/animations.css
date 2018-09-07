@@ -1,0 +1,24 @@
+@keyframes arrow-up {
+	0% {
+		transform: translateY(-3px);
+
+	}
+
+	45% {
+		transform: translateY(-100px);
+		opacity: 1;
+	}
+
+	46%, 54% {
+		opacity: 0;
+	}
+
+	55% {
+		transform: translateY(100px);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(-3px);
+	}
+}

@@ -1,0 +1,86 @@
+.posts {
+	background-color: #121212;
+	max-width: 100vw;
+	padding: 40px 0;
+}
+
+.posts__flex-container {
+	justify-content: flex-start;
+}
+
+.posts__wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.post {
+	width: 25%;
+	margin-left: 25%;
+}
+
+.post__date {
+	font-size: 68px;
+	display: flex;
+	font-weight: 900;
+	align-self: flex-start;
+	line-height: 48px;
+	width: auto;
+	flex-grow: 0;
+	margin: 24px 0;
+}
+.post__date span {
+	font-size: 18px;
+	align-self: flex-start;
+	font-weight: normal;
+	line-height: 18px;
+	font-style: italic;
+	color: #757575;
+}
+
+.post__line {
+	height: 2px;
+	width: 84px;
+	background: linear-gradient(135deg, var(--color1) 0%, var(--color2) 100%);
+}
+
+.post h3 {
+	font-size: 24px;
+}
+
+.post button {
+	text-transform: uppercase;
+	background: #121212;
+	border: none;
+	outline: none;
+	color: #ffffff;
+	border-radius: 4px;
+	padding: 8px 12px;
+	transform: translateX(-8px);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.post button:hover {
+	cursor: pointer;
+	background: linear-gradient(135deg, var(--color1) 0%, var(--color2) 100%);
+	box-shadow: 0 0 2px 2px rgba(255,255,255,.2);
+}
+
+.post button:active {
+	box-shadow: none;
+}
+
+@media all and (max-width: 1000px) {
+	.post {
+		width: 48%;
+		margin-left: 2%;
+	}
+}
+@media all and (max-width: 720px) {
+	.post {
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+		margin-bottom: 40px;
+	}
+}

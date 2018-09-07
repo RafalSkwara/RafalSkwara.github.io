@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,400i,700,700i,800&subset=latin-ext');
+
+@import url('libs/font-awesome.min.css');
+@import url('modules/001_general-styles.css');
+@import url('modules/animations.css');
+
+/* - - Sections - - */
+@import url('modules/header.css');
+@import url('modules/services.css');
+@import url('modules/portfolio.css');
+@import url('modules/process.css');
+@import url('modules/clients.css');
+@import url('modules/pricing.css');
+@import url('modules/skills.css');
+@import url('modules/testimonials.css');
+@import url('modules/posts.css');
+@import url('modules/footer_and_contact.css');

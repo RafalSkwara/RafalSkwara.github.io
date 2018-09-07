@@ -1,0 +1,60 @@
+section.process .flex-container {
+    max-width: 1200px;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+section.process .column-1-3 {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+section.process h2 {
+    font-size: 34px;
+}
+
+section.process h2 {
+    margin: 30px 0;
+}
+
+section.process .number {
+    font-size: 60px;
+    font-weight: 700;
+    display: flex;
+    align-content: flex-end;
+    margin-bottom: 20px;
+}
+
+section.process .number .text-num {
+    color: #616161;
+    font-weight: normal;
+    font-size: 24px;
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+section.process p {
+    color: #616161;
+    padding-right: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+section.process .line-2 {
+    width: 50%;
+    height: 2px;
+    background-image: linear-gradient(135deg, var(--color1) 0%, var(--color2) 100%);
+    margin: 0;
+}
+
+
+@media all and (max-width: 720px) {
+
+	section.process .column-1-3 {
+		width: 100%;
+		padding-left: 10%;
+	}
+}
