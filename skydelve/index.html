@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>SkyDelve - get lost in Space</title>
+  <style>
+	  html, body, .root {
+		  background-color: #000;
+	  }
+	  .loading-screen {
+		  height: 100vh;
+		  width: 100vw;
+		  max-width: 100%;
+		  max-height: 100%;
+		  background-color: #000;
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+		  font-family: 'Exo', Helvetica, Arial, sans-serif;
+	  }
+	  .loading-screen h1 {
+		  color: #fff;
+	  }
+	  .spinner {
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-around;
+		  height: 100px;
+		  width: 100px;
+		  border-radius: 50%
+	  }
+	  .spinner .dot {
+		  height: 20px;
+		  width: 20px;
+		  border-radius: 50%;
+		  background-color: #fff;
+		  animation: jump .6s ease-in-out infinite;
+	  }
+
+	  .spinner .dot:nth-child(2) {
+		  animation: jump 1s ease-in-out .1s infinite; 
+	  }
+	  .spinner .dot:nth-child(3) {
+		  animation: jump 1s ease-in-out .2s infinite; 
+	  }
+	  
+	  @keyframes jump {
+		  0% {
+			  transform: translateY(0)
+		  }
+		  60% {
+			  transform: translateY(-40px)
+		  }
+		  100% {
+			  transform: translateY(0px)
+		  }
+	  }
+  </style>
+
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+  <div id="root">
+    <div class="loading-screen">
+		<h1>Please wait while the app is loading</h1>
+     <div class="spinner">
+		 <div class="dot"></div>
+		 <div class="dot"></div>
+		 <div class="dot"></div>
+	 </div>
+    </div>
+  </div>
+<script type="text/javascript" src="main.481dd5048139e4d9fd64.js"></script></body>
+
+</html>
