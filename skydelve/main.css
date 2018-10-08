@@ -9924,6 +9924,11 @@ a {
   .button a, .btn a {
     text-decoration: none; }
 
+body #root .main-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
 @media all and (max-width: 640px) {
   .spacer-small {
     height: 5vh; }
