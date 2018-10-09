@@ -2456,7 +2456,8 @@
     font-size: 18px; }
   .mars__cards a {
     height: 220px;
-    width: 220px; } }
+    width: 220px;
+    max-height: 33%; } }
 
 @media all and (max-width: 720px) {
   .mars .spacer-small {
@@ -2476,7 +2477,8 @@
             flex-direction: column;
     max-height: calc(100vh - 300px); }
     .mars__cards a {
-      width: 80%; }
+      width: 80%;
+      max-height: 33%; }
     .mars__cards .rover {
       background-size: cover; } }
 
@@ -2487,7 +2489,9 @@
   .mars p {
     font-size: 15px; }
   .mars .mars__calendar-wrap {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .mars__cards a {
+    max-height: 33%; } }
 
 .mars div.switch-wrapper > div,
 .mars div.switch-wrapper {
@@ -10524,6 +10528,9 @@ a {
   color: inherit; }
   a:hover {
     text-decoration: none; }
+
+.container-fluid {
+  overflow-x: hidden; }
 
 .flex-center {
   display: -webkit-box;
