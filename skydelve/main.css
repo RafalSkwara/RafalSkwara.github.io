@@ -2512,7 +2512,7 @@
   padding: 20px; }
 
 .mars h2.selected {
-  margin: 0 40px 40px 40px;
+  margin: 10px 40px 40px 40px;
   font-weight: 300; }
   .mars h2.selected span {
     font-weight: 500; }
@@ -2587,6 +2587,19 @@
     margin: 0;
     -ms-flex-item-align: center;
         align-self: center; }
+  .mars-search .mars-search__sol-max {
+    margin: 15px 0 10px 0;
+    text-align: center; }
+  .mars-search button.selected-camera {
+    border: none;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.2); }
+    .mars-search button.selected-camera .button-spacer {
+      display: none; }
+    .mars-search button.selected-camera:hover {
+      background-color: #224071; }
+      .mars-search button.selected-camera:hover .button-spacer {
+        display: block; }
   .mars-search .search-button {
     margin-top: 10px; }
     .mars-search .search-button:hover {
@@ -2599,13 +2612,14 @@
         -ms-flex-align: center;
             align-items: center; }
     .mars-search .search-input__wrapper button {
-      width: 60px;
-      height: 60px; }
+      border: 1px solid #fff;
+      width: 50px;
+      height: 50px; }
   .mars-search input.search-input {
-    height: 60px;
+    height: 50px;
     width: 120px;
     text-align: center;
-    line-height: 60px;
+    line-height: 50px;
     font-size: 28px;
     padding: 0;
     -webkit-appearance: textfield;
@@ -2628,7 +2642,7 @@
     text-align: center;
     font-size: 18px; }
   .mars-search h2.selected {
-    margin-bottom: 10px; }
+    margin: 10px 0; }
   .mars-search p {
     font-size: 16px; }
   .mars-search button.btn.button {
@@ -2700,7 +2714,9 @@
     font-weight: 400; }
 
 .mars .image-wrapper {
-  max-height: 100%;
+  margin-top: 20px;
+  max-height: calc(100vh - 280px);
+  min-height: 400px;
   max-width: 100%;
   width: 100vw;
   display: -webkit-box;
@@ -2714,7 +2730,26 @@
           justify-content: center; }
   .mars .image-wrapper img {
     -webkit-transform-origin: center;
-            transform-origin: center; }
+            transform-origin: center;
+    -o-object-fit: contain;
+       object-fit: contain; }
+  .mars .image-wrapper p {
+    -ms-flex-item-align: auto;
+        align-self: auto; }
+
+.mars .mars__button {
+  width: 80px;
+  border: 2px solid #fff; }
+  .mars .mars__button:hover, .mars .mars__button:active {
+    background-color: #090F27;
+    border: 2px solid #3869BA; }
+
+.mars .flex-center p {
+  padding: 10px 0;
+  margin: 0; }
+  .mars .flex-center p:nth-child(2) {
+    margin-left: 10px;
+    font-weight: 500; }
 
 .buttons {
   margin: 10px 0;
@@ -2741,26 +2776,43 @@
 @media all and (max-width: 1000px) {
   html, body {
     overflow: auto; }
-  .mars .hero__content {
+  .mars {
     height: auto;
     display: block; }
-  .mars .hero__content h1 {
+  .mars h1 {
     font-size: 24px;
     margin: 0;
     text-align: center;
     padding: 8px 0; }
-  .mars .hero__content h2 {
+  .mars h2 {
     margin: 0 15px 5px 15px;
     font-size: 18px; }
-  .hero.fullscreen-bg.mars {
+  .fullscreen-bg.mars {
     max-height: auto;
     overflow: auto; } }
 
-@media all and (max-width: 720px) {
+@media all and (max-width: 640px) {
   .mars img {
     max-height: calc(100vh - 220px); }
-  .mars .hero__content {
-    padding: 70px 10px 0 10px; } }
+  .mars .flex-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .mars .flex-center p {
+      -ms-flex-item-align: center;
+          align-self: center;
+      text-align: center;
+      padding: 0 0 5px 0; }
+      .mars .flex-center p:nth-child(2) {
+        margin-left: 0; }
+  .mars .image-wrapper {
+    margin-top: 20px;
+    max-height: calc(100vh - 320px);
+    min-height: 270px; } }
 
 .mars .hero__content div.switch-wrapper > div,
 .mars .hero__content div.switch-wrapper {
