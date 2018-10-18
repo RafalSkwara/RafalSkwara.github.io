@@ -2589,7 +2589,7 @@ header.swirl a .button--4 {
       width: 100%;
       height: auto; }
     .about-page-wrapper section.content {
-      padding-top: 0; }
+      padding: 0 20px; }
       .about-page-wrapper section.content .info-item {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -3031,7 +3031,7 @@ header.swirl a .button--4 {
   background-attachment: fixed;
   width: 100vw;
   max-width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #8013D4;
   -webkit-animation: mount2 .3s linear forwards;
           animation: mount2 .3s linear forwards;
@@ -3043,7 +3043,7 @@ header.swirl a .button--4 {
     line-height: 40px;
     margin: 20px 0 0 0; }
   .contact-page-wrapper section.content {
-    max-height: calc(100vh - 182px);
+    min-height: calc(100vh - 182px);
     max-width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
